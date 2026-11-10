@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lucky Mobilewala</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF2FB; --card:#FFFFFF; --ink:#0F1B3D; --muted:#5A6786; --line:#D6DDF0; --hero:#1D3FD8; --gold:#FFD23F; --gold-ink:#1B1500;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0A1020; --card:#131C33; --ink:#EEF2FF; --muted:#9AA8C7; --line:#223052; --hero:#14288F;}
+}
+:root[data-theme="dark"]{--bg:#0A1020; --card:#131C33; --ink:#EEF2FF; --muted:#9AA8C7; --line:#223052; --hero:#14288F;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Manrope',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.5;min-height:100vh}
+.wrap{max-width:440px;margin:0 auto;padding:0 18px 36px}
+.hero{margin:0 -18px;background:var(--hero);color:#fff;text-align:center;padding:30px 24px 64px;border-radius:0 0 36px 36px;overflow:hidden}
+.phones{width:min(250px,70vw);display:block;margin:0 auto 4px}
+.phone{animation:rise .8s cubic-bezier(.2,.8,.2,1) both;transform-origin:50% 100%}
+.phone.back{animation-delay:.12s}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+h1{font-family:'Bricolage Grotesque',Georgia,'Segoe UI',sans-serif;font-weight:800;font-size:38px;line-height:1.05;letter-spacing:-.02em;margin:10px 0 8px}
+.tag{margin:0 auto;max-width:30ch;font-size:15px;opacity:.9}
+.links{list-style:none;margin:-30px 0 0;padding:0;display:grid;gap:11px;position:relative}
+.links a{display:flex;align-items:center;gap:14px;padding:14px 16px;background:var(--card);border:1.5px solid var(--line);border-radius:18px;color:var(--ink);text-decoration:none;font-weight:800;font-size:16px;box-shadow:0 6px 16px rgba(15,27,61,.08);transition:transform .15s ease,border-color .15s ease}
+.links a:hover{border-color:var(--hero)}
+.links a:active{transform:scale(.98)}
+.links a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.links a.main{background:var(--gold);color:var(--gold-ink);border-color:var(--gold);font-size:17px;padding:17px 18px}
+.links a.main small{color:inherit;opacity:.75}
+.ic{flex:none;width:44px;height:44px;border-radius:13px;display:grid;place-items:center;color:#fff}
+.main .ic{background:#1B1500;color:var(--gold)}
+.ic svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.txt{display:flex;flex-direction:column;min-width:0;line-height:1.25}
+.txt small{font-weight:400;font-size:13px;color:var(--muted)}
+.call{background:#0F9D58}.ig{background:linear-gradient(45deg,#F9A03F,#E1306C,#7B3FE4)}.gr{background:#F4B400;color:#3a2c00}.map{background:#E4572E}
+.foot{margin-top:28px;text-align:center;font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.phone{animation:none}.links a{transition:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <svg class="phones" viewBox="0 0 300 280" role="img" aria-label="Do smartphone">
+      <defs>
+        <linearGradient id="scr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7CFF"/><stop offset="1" stop-color="#9B5CFF"/></linearGradient>
+        <linearGradient id="scr2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD23F"/><stop offset="1" stop-color="#FF8A3D"/></linearGradient>
+      </defs>
+      <g class="phone back" transform="rotate(-12 110 160)">
+        <rect x="52" y="40" width="104" height="220" rx="20" fill="#0B1230"/>
+        <rect x="58" y="47" width="92" height="206" rx="15" fill="url(#scr2)"/>
+        <rect x="87" y="52" width="34" height="7" rx="3.5" fill="#0B1230"/>
+      </g>
+      <g class="phone">
+        <rect x="108" y="14" width="116" height="248" rx="22" fill="#0B1230"/>
+        <rect x="115" y="22" width="102" height="232" rx="16" fill="url(#scr)"/>
+        <rect x="147" y="28" width="38" height="8" rx="4" fill="#0B1230"/>
+        <circle cx="166" cy="116" r="30" fill="#FFD23F"/>
+        <text x="166" y="128" text-anchor="middle" font-family="Bricolage Grotesque,Georgia,sans-serif" font-weight="800" font-size="36" fill="#1B1500">L</text>
+        <rect x="136" y="170" width="60" height="7" rx="3.5" fill="#fff" opacity=".85"/>
+        <rect x="146" y="184" width="40" height="6" rx="3" fill="#fff" opacity=".5"/>
+        <rect x="140" y="228" width="52" height="5" rx="2.5" fill="#fff" opacity=".6"/>
+      </g>
+      <path d="M252 70l5 11 12 2-9 8 3 12-11-6-11 6 3-12-9-8 12-2z" fill="#FFD23F"/>
+      <path d="M38 52l3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1z" fill="#FFD23F" opacity=".8"/>
+    </svg>
+    <h1>Lucky Mobilewala</h1>
+    <p class="tag">Naye mobile, accessories aur repair. Sab kuch ek hi jagah.</p>
+  </header>
+
+  <ul class="links">
+    <li><a class="main" href="https://wa.me/918769640149?text=Hi%20Lucky%20Mobilewala%2C%20mujhe%20price%20puchna%20hai" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-5.2A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.8-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z"/></svg></span>
+      <span class="txt">WhatsApp par price puchein<small>Mobile ya accessory, seedha baat karein</small></span></a></li>
+
+    <li><a href="tel:+918769640149">
+      <span class="ic call"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+      <span class="txt">Call karein<small>+91 87696 40149</small></span></a></li>
+
+    <li><a href="https://www.instagram.com/lucky.mobilewala.13?psln=ZGs2aHRyMTBhdWNi" target="_blank" rel="noopener">
+      <span class="ic ig"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></span>
+      <span class="txt">Instagram<small>Naye arrivals aur offers</small></span></a></li>
+
+    <li><a href="https://share.google/3e33X78vn4vseuh7F" target="_blank" rel="noopener">
+      <span class="ic gr"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></span>
+      <span class="txt">Google par review dein<small>Aapka feedback hamare liye zaroori hai</small></span></a></li>
+
+    <li><a href="https://maps.google.com/?q=Lucky+Mobilewala" target="_blank" rel="noopener">
+      <span class="ic map"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+      <span class="txt">Dukaan ka rasta dekhein<small>Google Maps par location</small></span></a></li>
+  </ul>
+
+  <p class="foot">Lucky Mobilewala</p>
+</main>
+</body>
+</html>
